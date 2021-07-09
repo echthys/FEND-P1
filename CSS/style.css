@@ -1,0 +1,101 @@
+/* All */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Header and Footer */
+
+header {
+    border-bottom: 2px solid black;
+}
+
+header, footer {
+    background-color: gray;
+    color: white;
+    padding: 5vh;
+    text-align: center;
+}
+
+.main-image {
+    height: 25vh;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-image: url(../img/universe.jpg);
+    background-size: auto;
+}
+
+/* Posts */
+
+.recent-posts {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-areas: 
+    "main"
+    "s1"
+    "s2";
+}
+
+.post {
+    padding: 1em;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 25vw auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "image hd"
+    "image button";
+}
+
+.post img {
+    grid-area: image;
+}
+
+.post h2 {
+    grid-area: hd;
+}
+
+.post button {
+    grid-area: button;
+    margin: 1em;
+}
+
+#older-post-one {
+    grid-area: s1;
+    border: 1px solid red;
+}
+
+#older-post-two {
+    grid-area: s2;
+    border: 1px solid red;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.post p {
+    display: none; /*Dont display Paragrpagh on mobile*/
+}
+
+.post-image {
+    background-image: url(../img/small.png);  
+    min-width: 20vw;
+    min-height: auto;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+
+/* Larger View port */
+
+/* .recent-posts {
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    grid-template-areas: 
+    "main s1"
+    "main s2";
+} */
