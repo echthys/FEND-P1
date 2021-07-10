@@ -58,18 +58,19 @@
 .socials img {
     grid-area: socials;
     max-height: 5vh;
-    max-width: auto;
     justify-content: center;
     margin-left: 1vw;
 }
 
-.back button a{
-    text-decoration: none;
-    color: black;
+.back {
+    margin: 5vh 0 5vh 0;
 }
-
-.back button {
-    margin-bottom: 2vh;
+.back a {
+    background-color: #011229;
+    color: white;
+    padding: 1em;
+    border-radius: 3%;
+    text-decoration: none;
 }
 
  /* Medium devices (tablets, 768px and up) */
