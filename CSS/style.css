@@ -77,13 +77,17 @@ footer {
 
 .posts button {
     background-color: #012E4E ;
-    color: white;
     border-radius: 2px;
     border: 1px solid black;
     padding: 0.5em;
     float: right;
     margin-right: 1.5em;
     /* align-self: right; */
+}
+
+.posts a {
+    color: white;
+    text-decoration: none;
 }
 
 #post-one {
@@ -94,7 +98,41 @@ footer {
     grid-area: p2;   
 }
 
+#post-three {
+    display: none;
+}
 
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .posts{
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "p1 p1"
+        "p2 p3";
+        justify-content: center;
+        gap: 0 1em;
+    }
+
+    #post-three {
+        display: block;
+        grid-area: p3;
+    }
+    
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
 
 /* External Grid End */
 
